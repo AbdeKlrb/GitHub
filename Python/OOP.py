@@ -14,7 +14,17 @@ class Land:
         print("_________________________________")
 
 
-    
+class Sections(Land):
+    plants_by_section = 4
+
+    def __init__(self,landname, address, space, sections = 4):
+        super().__init__(landname, address, space)
+        self.sections = sections
+
+    def show_sections_details(self):
+        print(f"land is {self.sections}")
+
+
 
 
 
